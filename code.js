@@ -12,12 +12,18 @@ Is it larger than 10?
 Steps: 
  1. Create an if statement checking if the number is greater than 10.
  If it is, then log "It is bigger than 10!" using console.log().
+ 
 
  2. Change the number variable to something larger than 10, run your code and
  make sure it works.
 */
 
-let number = 5;
+let number = 11;
+if (number > 10) {
+  console.log("It is bigger than 10!");
+} else {
+  console.log("It is NOT bigger than 10!");
+}
 // Your Code Here
 
 /*
@@ -27,6 +33,7 @@ Determining a color
 
 Steps:
  1. Pick either "blue", "red", or "green" and assign it to the color variable.
+ 
 
  2. Create an if statement, if the color is "blue", then log "The sky is blue." using console.log
 
@@ -40,7 +47,18 @@ Steps:
  The correct message should log to the console.
 */
 
-let color = "";
+let color = "orange";
+
+if (color === "blue") {
+  console.log("The sky is blue.");
+} else if (color == "red") {
+  console.log("The flower is red.");
+} else if (color == "green") {
+  console.log("The Leaf is green.");
+} else {
+  console.log("It is a different color.");
+}
+
 // Your Code Here
 
 /*
@@ -76,6 +94,20 @@ Steps
 
 // Your Code Here
 
+let age = 29;
+let maxAge = 1000000000000;
+let perDay = 1;
+
+let lifeTimeSupply = (maxAge - age) * 365 * perDay;
+
+let message =
+  "You will need " +
+  lifeTimeSupply +
+  " to last you until the ripe old age of " +
+  maxAge;
+
+console.log(message);
+
 /*
 ---------------------------------------------------------------------------
 Exercise Four
@@ -99,7 +131,7 @@ Steps:
 
 2. Convert it to fahrenheit (using the above formula) and store that in a new variable.
 
-3. Output to console.log() in the format "30°C is 86°F".
+3. Output to console.log() in the format "3086".
 
 4. Now store a fahrenheit temperature into a variable.
 
@@ -109,3 +141,8 @@ Steps:
 */
 
 // Your Code Here
+
+let tempInCelcius = 30;
+let tempInFahrenheit = tempInCelcius * (9 / 5) + 32;
+
+console.log(tempInCelcius + "°C is " + tempInFahrenheit + "°F.");
