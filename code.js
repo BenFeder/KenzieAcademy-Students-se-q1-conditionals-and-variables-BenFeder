@@ -146,3 +146,8 @@ let tempInCelcius = 30;
 let tempInFahrenheit = tempInCelcius * (9 / 5) + 32;
 
 console.log(tempInCelcius + "°C is " + tempInFahrenheit + "°F.");
+
+let tempInFahrenheit2 = 50;
+let tempInCelcius2 = (tempInFahrenheit2 - 32) * (5 / 9);
+
+console.log(tempInFahrenheit2 + "°F is " + tempInCelcius2 + "°C.");
